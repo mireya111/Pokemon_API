@@ -3,7 +3,7 @@ ion-content {
 }
 
 ion-card {
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
@@ -12,10 +12,12 @@ ion-card {
 
 ion-card:hover {
   transform: scale(1.02);
+  background: #f2f2f2;
 }
 
 ion-card-title {
-  color: #e3350d; // rojo Pokémon
+  color: #0d9fe3;
+  background: #f2f2f2; // rojo Pokémon
   font-weight: bold;
   font-size: 1.4rem;
   text-shadow: 1px 1px 1px #fff;
@@ -69,4 +71,31 @@ ion-note {
 p {
   margin: 8px 0;
   font-size: 1rem;
+}
+
+
+ion-textarea.modern-textarea {
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  width: 100%;
+  min-height: 120px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ion-textarea.modern-textarea:focus-within {
+  border-color: #30a7d7;
+  box-shadow: 0 0 0 3px rgba(48, 167, 215, 0.3);
+}
+
+ion-item {
+  --highlight-height: 0; /* remove default underline */
+  --inner-padding-end: 0;
 }
