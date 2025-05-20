@@ -26,3 +26,26 @@ Este proyecto tiene fines académicos y de aprendizaje en el consumo de APIs des
 - **Gestión de peticiones:** HTTP / Axios / Fetch API (según corresponda)
 - **Herramientas de desarrollo:** Visual Studio Code / Android Studio
 
+## Evidencias del despliegue en un celular Android
+## Buscador 
+![image](https://github.com/user-attachments/assets/3e7b14a4-77fd-46ee-8b3d-6503f861e6a4)
+
+![image](https://github.com/user-attachments/assets/f2bcf23d-c1a1-4d9c-b54a-0a8a736a24be)
+
+## Pagina de detalles
+![image](https://github.com/user-attachments/assets/5b5e9a6b-0471-4f7c-8c40-d9454aa65ea4)
+
+## Campo extra para opiniones
+![image](https://github.com/user-attachments/assets/bca2c520-b9ea-4b28-8b92-55f46665a245)
+
+![image](https://github.com/user-attachments/assets/403ee146-dc94-4f25-8417-f9000f740803)
+
+![image](https://github.com/user-attachments/assets/ebdfff7c-08b5-4b34-96c3-544ccc1ddfe7)
+
+## Extra: Se coloco un icono personalizado para cuando se intale la app
+![image](https://github.com/user-attachments/assets/22422d61-b7ca-4f3a-bf5e-def835703220)
+
+# Todo lo que se guardo en el Firebase
+![image](https://github.com/user-attachments/assets/1107dd86-3425-4781-b3c3-d7b82c828a52)
+
+
