@@ -45,5 +45,7 @@ Este proyecto tiene fines académicos y de aprendizaje en el consumo de APIs des
 ## Extra: Se coloco un icono personalizado para cuando se intale la app
 ![image](https://github.com/user-attachments/assets/22422d61-b7ca-4f3a-bf5e-def835703220)
 
+# Todo lo que se guardo en el Firebase
+![image](https://github.com/user-attachments/assets/1107dd86-3425-4781-b3c3-d7b82c828a52)
 
 
