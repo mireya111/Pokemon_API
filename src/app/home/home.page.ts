@@ -4,19 +4,22 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { IonHeader, IonToolbar, IonTitle, IonContent, } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [ IonicModule, CommonModule]
+  imports: [ IonicModule, CommonModule, FormsModule]
 })
 export class HomePage implements OnInit{
   //Sobreeescritura de metodos
   pokemons: any[] = [];
+  pokemonsFiltrados: any[] = [];
   offeset=0; 
   limit=20;
   loading=false;
+  nombreABuscar: string = '';
 
   constructor(private router: Router, private http: HttpClient) { }
 
@@ -31,6 +34,7 @@ export class HomePage implements OnInit{
     //Se llama a la API
     this.http.get<any>(`https://pokeapi.co/api/v2/pokemon?limit=${this.limit}&offset=${this.offeset}`).subscribe((response) => {
       this.pokemons = [...this.pokemons, ...response.results];
+      this.pokemonsFiltrados = this.pokemons
       this.offeset += this.limit;
       this.loading = false;
       if (event) {
@@ -50,4 +54,16 @@ export class HomePage implements OnInit{
   getDetalles(name: string){
     this.router.navigate([`detalles/${name}`]);
   }
+
+  buscarPokemon(){
+    const nombre = this.nombreABuscar.trim().toLocaleLowerCase(); 
+    if(!nombre){
+      this.pokemonsFiltrados = this.pokemons;
+      return ; 
+    }
+    this.pokemonsFiltrados = this.pokemons.filter(p=> p.name.toLowerCase().includes(nombre))
+  }
+
+  
+
 }
