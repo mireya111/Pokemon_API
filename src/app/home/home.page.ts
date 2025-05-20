@@ -47,8 +47,10 @@ export class HomePage implements OnInit{
     });
   }
 
-  getImageUrl(index: number): string {
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1}.png`;
+  getImageUrl(pokemon: any): string {
+    const urlParts = pokemon.url.split('/');
+    const id = urlParts[urlParts.length - 2];
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
   }
 
   getDetalles(name: string){
@@ -63,7 +65,4 @@ export class HomePage implements OnInit{
     }
     this.pokemonsFiltrados = this.pokemons.filter(p=> p.name.toLowerCase().includes(nombre))
   }
-
-  
-
 }
